@@ -14,11 +14,11 @@ const test = async () => {
     let deleteById = await products.deleteById(2);
     let deletAll = await products.deletAll();
 
-    console.log(save)
-    console.log(getAll)
-    console.log(getById)
-    console.log(deleteById)
-    console.log(deletAll)
+    console.log(save);
+    console.log(getAll);
+    console.log(getById);
+    console.log(deleteById);
+    console.log(deletAll);
 };
 
 test();
