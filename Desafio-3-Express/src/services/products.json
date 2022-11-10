@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Havanna clasico",
+        "price": 2300,
+        "thumbail": "https://www.sucosorder.com/media/images/org/x7516-1_1-alfajores-havanna-chocolate-6er-pack-argentinien.jpg",
+        "id": 1
+    },
+    {
+        "title": "Havanna cacao",
+        "price": 3000,
+        "thumbail": "https://pbs.twimg.com/media/EP7tj7-WsAAICF-.jpg:large",
+        "id": 2
+    },
+    {
+        "title": "Havanna dulce de leche",
+        "price": 2800,
+        "thumbail": "https://i.ytimg.com/vi/rAuVR1u5KvQ/hqdefault.jpg",
+        "id": 3
+    }
+]
