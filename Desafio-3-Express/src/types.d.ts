@@ -4,7 +4,7 @@ export interface ProductsEntry {
     id: number,
     title: string,
     price: number,
-    thumbail: thumbail
+    thumbail: string
 }
 
 export type NonSensitiveInfoProductsEntry = Omit<ProductsEntry, "thumbail">
