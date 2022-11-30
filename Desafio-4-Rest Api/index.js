@@ -1,17 +1,27 @@
 import express from 'express';
+import { Router } from 'express';
+import Products from './products';
 
 const app = express()
-const PORT = 8000
+const PORT = 8080
 app.listen(PORT)
+const products = new Products()
+const productsRouter = new Router()
 
-app.get('/', (req, res) => res.send(
-    "Bienvenido"
-))
 
-app.get('/usuarios', (req, res) => res.send(`aqui van los users`))
-app.put('/', (req, res) => res.send(`poner`))
-app.post('/', (req, res) => res.send(`acutalizar`))
-app.delete('/', (req, res) => res.send(`borrar`))
+productsRouter.use(express.json())
+productsRouter.use(express.urlencoded({ extended: true }))
 
-console.log(`listen in http://localhost:${PORT} `)
 
+app.use(express.static("public"))
+app.use('/products', productsRouter)
+
+
+
+
+const server = app.listen(PORT, () => {
+    console.log(`escuchando servidor in ${server.address().port} `)
+})
+
+
+server.on("error", console.log("error en el servidor"))
