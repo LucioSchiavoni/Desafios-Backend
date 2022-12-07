@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "nombre": "Diego Forlan",
+        "edad": 41,
+        "comentario": "AWS y Google",
+        "estado": "enojado",
+        "thumbail": "https://www.sucosorder.com/media/images/org/x7516-1_1-alfajores-havanna-chocolate-6er-pack-argentinien.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Cristiano Ronaldo",
+        "edad": 38,
+        "comentario": "Buenas noches",
+        "estado": "cansado",
+        "puesto": "Front-End con React para escritorio",
+        "thumbail": "https://pbs.twimg.com/media/EP7tj7-WsAAICF-.jpg:large"
+    },
+    {
+        "id": 3,
+        "nombre": "Leo Messi ",
+        "edad": 34,
+        "comentario": "Buenas tardes",
+        "estado": "contento",
+        "puesto": "Back-End con NodeJs y SQL",
+        "thumbail": "https://i.ytimg.com/vi/rAuVR1u5KvQ/hqdefault.jpg"
+    }
+]
