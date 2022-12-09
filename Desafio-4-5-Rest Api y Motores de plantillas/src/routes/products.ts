@@ -4,14 +4,11 @@ import * as productServices from '../services/productServices'
 
 const router = express.Router();
 
-router.get('/', (_req, res) => {
-    res.render("index", productServices.getEntriesWithoutSensitiveInfo())
 
-})
 
 router.get('/:id', (req, res) => {
-    const products = productServices.findById(+req.params.id) //Le estamos diciendo que es de tipo Number con el "+" 
-    return products ? res.send(products) : res.sendStatus(404)
+    const productsId = productServices.findById(+req.params.id) //Le estamos diciendo que es de tipo Number con el "+" 
+    return productsId ? res.send(productsId) : res.sendStatus(404)
 })
 
 

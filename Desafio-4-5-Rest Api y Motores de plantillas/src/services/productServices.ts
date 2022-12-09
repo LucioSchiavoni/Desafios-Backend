@@ -3,19 +3,19 @@ import productData from './products.json'
 
 
 
-const products: ProductsEntry[] = productData as ProductsEntry[]
+const usuarios: ProductsEntry[] = productData as ProductsEntry[]
 
-export const getEntries = (): ProductsEntry[] => products
+export const getEntries = (): ProductsEntry[] => usuarios
 
 export const findById = (id: number): ProductsEntry | undefined => {
-    const entry = products.find(d => d.id = id)
+    const entry = usuarios.find(d => d.id = id)
     return entry
 }
 
 
 
 export const getEntriesWithoutSensitiveInfo = (): NonSensitiveInfoProductsEntry[] => {
-    return products.map(({ id, nombre, edad, estado, puesto, thumbail }) => {
+    return usuarios.map(({ id, nombre, edad, estado, puesto, thumbail }) => {
         return {
             id,
             nombre,
@@ -29,11 +29,11 @@ export const getEntriesWithoutSensitiveInfo = (): NonSensitiveInfoProductsEntry[
 
 export const addProduct = (newProductEntry: NewProductEntry): ProductsEntry => {
     const newProduct = {
-        id: Math.max(...products.map(d => d.id)) + 1,
+        id: Math.max(...usuarios.map(d => d.id)) + 1,
         ...newProductEntry
     }
 
-    products.push(newProduct)
+    usuarios.push(newProduct)
     return newProduct
 }
 

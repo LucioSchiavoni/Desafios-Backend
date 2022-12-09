@@ -4,7 +4,7 @@ export enum Estado {
     Enojado = "enojado",
     Cansado = "cansado",
     Aburrido = "aburrido",
-    Concentrado = "Concentrado",
+    Concentrado = "concentrado",
     Estresado = "estresado",
     Motivado = "motivado",
     Ocupado = "ocupado"
