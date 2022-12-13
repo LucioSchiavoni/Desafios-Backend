@@ -4,6 +4,8 @@ app.use(express.json())
 import productRouter from './routes/products'
 import path from 'path'
 
+
+
 const PORT = 8080;
 
 
@@ -11,7 +13,10 @@ app.set("views", './views');
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
+
 app.use(express.urlencoded({ extended: false }));
+
+
 
 let usuarios: string[] = []
 
@@ -27,6 +32,8 @@ app.post("/create", (req, res) => {
 
 
 app.use("/user", productRouter)
+
+
 
 app.listen(PORT, () => {
     console.log(`Escuchando puerto en http://localhost:${PORT} `)

@@ -1,4 +1,4 @@
-import { ProductsEntry, NonSensitiveInfoProductsEntry, NewProductEntry } from '../types'
+import { ProductsEntry, NonSensitiveInfoProductsEntry, NewProductEntry } from '../../types'
 import productData from './products.json'
 
 
